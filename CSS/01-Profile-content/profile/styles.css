@@ -1,0 +1,26 @@
+body {
+    background-color:beige;
+    font-family: 'Philosopher', sans-serif;
+    color:#0096c7;
+    line-height: normal;
+}
+
+h1 {
+    color: #023e8a;
+    font-weight: 600;
+}
+
+a:hover{
+    background-color: palevioletred;
+}
+
+.profile-round{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    width:500px;
+    margin: 0 auto;
+}

@@ -1,0 +1,114 @@
+/* --- Font imports --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
+
+/* --- Component imports --- */
+@import url("components/container.css");
+@import url("components/card-vertical.css");
+
+/* --- Fonts & colors --- */
+html{
+    box-sizing: border-box;
+  }
+
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+
+body {
+  background-color: rgb(245,245,245);
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: "Poppins", "sans-serif";
+  margin-left:30px;
+  text-align: center;
+}
+
+
+p {
+  margin-left:10px;
+}
+
+ul > li {
+  margin:5px;
+  padding: 5px 10px;
+  display:inline-block;
+  border: 1px solid #FFE81F;
+  background-color: #FFE81F;
+  /* color: #000; */
+  list-style: none;
+  text-transform: uppercase;
+  font-style: bold;
+  border-radius: 20px;
+}
+
+ul > li > a {
+  text-decoration: none;
+  color:black;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+
+}
+
+.logo{
+  height:100px;
+  border-radius:20px;
+  padding:10px;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 800px;
+  height: 533px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front img {
+  width: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#FFE81F;
+  color:black;
+  transform: rotateY(180deg);
+}
+
+
